@@ -1,0 +1,16 @@
+<app-issue-card
+    *ngFor="let issue of issuesList"
+    [issue]="issue">
+</app-issue-card>
+<div *ngIf="currentPagination && currentPagination.first">
+    <button (click)="processData(currentPagination.first)">First</button>
+</div>  
+<div *ngIf="currentPagination && currentPagination.prev">
+    <button (click)="processData(currentPagination.prev)">Prev</button>
+</div>
+<div *ngIf="currentPagination && currentPagination.next">
+    <button (click)="processData(currentPagination.next)">Next</button>
+</div>
+<div *ngIf="currentPagination && currentPagination.last">
+    <button (click)="processData(currentPagination.last)">Last</button>
+</div>

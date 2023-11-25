@@ -1,0 +1,6 @@
+<section>
+    <form [formGroup]="inputForm" (submit)="submitForm()">
+      <input id="url-input" type="text" placeholder="Input Github repo URL" formControlName="urlText">
+      <button type="submit" class="primary">Search</button>
+    </form>
+  </section>
