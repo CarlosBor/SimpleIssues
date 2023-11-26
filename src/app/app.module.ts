@@ -4,13 +4,12 @@ import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
-import { appReducer } from './ngrx/app.reducer';
-import { IssueSearcherComponent } from './issue-searcher/issue-searcher.component';
+import { appReducer } from './components/ngrx/app.reducer';
+import { IssueSearcherComponent } from './components/issue-searcher/issue-searcher.component';
 import { EffectsModule } from '@ngrx/effects';
-import { ApiEffects } from './ngrx/app.effects';
+import { ApiEffects } from './components/ngrx/app.effects';
 import { HttpClientModule } from '@angular/common/http';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-
 @NgModule({
   declarations: [
     AppComponent
