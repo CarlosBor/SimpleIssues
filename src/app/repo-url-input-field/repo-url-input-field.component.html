@@ -1,4 +1,19 @@
-<form (ngSubmit)="onSubmit()">
-  <input type="text" [(ngModel)]="apiUrl" name="apiUrl" placeholder="Enter API URL" />
-  <button type="submit">Fetch Data</button>
-</form>
+<div class="bg-gray-100 py-4">
+  <form (ngSubmit)="onSubmit()" class="mb-8 flex flex-col items-center justify-center">
+    <div class="flex items-center space-x-4">
+      <input type="text" [(ngModel)]="apiUrl" name="apiUrl" placeholder="Enter API URL"
+        class="border px-4 py-2 rounded-lg" />
+      <button type="submit"
+        class="bg-orange-500 hover:bg-orange-800 text-white font-bold py-2 px-4 rounded-lg">
+        Fetch Data
+      </button>
+    </div>
+  </form>
+  <div class="flex flex-col items-center">
+    <ul>
+      <h3>A couple of URLs to try out: </h3>
+      <li>https://api.github.com/repos/microsoft/typescript/issues</li>
+      <li>https://api.github.com/repos/tailwindlabs/tailwindcss/issues</li>
+    </ul>
+  </div>
+</div>

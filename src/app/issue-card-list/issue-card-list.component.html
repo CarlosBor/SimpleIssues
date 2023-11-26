@@ -1,37 +1,53 @@
-<p>This component exists</p>
-<p>https://api.github.com/repos/microsoft/typescript/issues</p>
-<div *ngIf="(cardInfoList$ | async) as cardInfoList">
-  <h2>Card Info List:</h2>
-  <ul>
-    <li *ngFor="let cardInfo of cardInfoList">
-      <!-- Display individual card info properties -->
-      <p>{{ cardInfo.id }}</p>
-      <p>{{ cardInfo.title }}</p>
-      <p>{{ cardInfo.url }}</p>
-      <p>{{ cardInfo.state }}</p>
-      <p>{{ cardInfo.created_at }}</p>
-      <p>{{ cardInfo.user.login }}</p>
-      <p>{{ cardInfo.body }}</p>
-      <!-- Add more properties as needed -->
-    </li>
-  </ul>
-</div>
-<div *ngIf="(pagination$ | async) as pagination">
-  <ng-container *ngIf="pagination">
-    <ng-container *ngIf="pagination.first !== undefined">
-      <button (click)="goFirst()">&lt;&lt;</button>
+<div class="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+  <div *ngIf="(pagination$ | async) as pagination" class="my-4 flex items-center justify-center space-x-4">
+    <ng-container *ngIf="pagination">
+      <ng-container *ngIf="pagination.first !== undefined">
+        <button (click)="goFirst()" class="border px-2">&lt;&lt;</button>
+      </ng-container>
+      <ng-container *ngIf="pagination.prev !== undefined">
+        <button (click)="goPrev()" class="border px-2">&lt;</button>
+      </ng-container>
+      <ng-container *ngIf="pagination.next !== undefined">
+        <button (click)="goNext()" class="border px-2">&gt;</button>
+      </ng-container>
+      <ng-container *ngIf="pagination.last !== undefined">
+        <button (click)="goLast()" class="border px-2">&gt;&gt;</button>
+      </ng-container>
     </ng-container>
-    <ng-container *ngIf="pagination.prev !== undefined">
-      <button (click)="goPrev()">&lt;</button>
+    <ng-container *ngIf="!pagination">
+      <p>No pagination found</p>
     </ng-container>
-    <ng-container *ngIf="pagination.next !== undefined">
-      <button (click)="goNext()">&gt;</button>
-    </ng-container>
-    <ng-container *ngIf="pagination.last !== undefined">
-      <button (click)="goLast()">&gt;&gt;</button>
-    </ng-container>
-  </ng-container>
-  <ng-container *ngIf="!pagination">
-    <p>No pagination found</p>
-  </ng-container>
+  </div>
+  
+
+  <div *ngIf="(cardInfoList$ | async) as cardInfoList">
+    <h2 class="text-3xl font-semibold mb-4">Card Info List:</h2>
+    <ul>
+      <li *ngFor="let cardInfo of cardInfoList" class="mb-4">
+        <div class="bg-orange-800 rounded-lg shadow-lg p-6 text-white max-w-3xl w-full">
+          <div class="bg-white rounded shadow p-4">
+            <h2 class="text-lg font-semibold mb-2 text-black"># {{cardInfo.id}} | {{cardInfo.title}}</h2>
+            <p class="text-gray-600 mb-2 max-w-3xl whitespace-normal break-words">{{cardInfo.body}}</p>
+            <div class="flex items-center text-gray-500 mb-2">
+              <span class="mr-2">{{cardInfo.id}}</span>
+              <span>State: {{cardInfo.state}}</span>
+            </div>
+            <div class="flex items-center text-gray-500">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                      d="M10 2C5.53 2 2 5.53 2 10a8 8 0 0 0 13.56 5.82c.42-.38.89-.77 1.4-1.19.51.42.98.81 1.4 1.19A8 8 0 0 0 18 10c0-4.47-3.53-8-8-8zm0 14c-2.67 0-5-2.33-5-5s2.33-5 5-5 5 2.33 5 5-2.33 5-5 5z" />
+              </svg>
+              <div>
+                <span>Created on {{cardInfo.created_at}} by {{cardInfo.user.login}}</span>
+              </div>
+            </div>
+            <div>
+              <a href="{{cardInfo.html_url}}" class="font-bold underline text-blue-500">Go to issue on Github</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
