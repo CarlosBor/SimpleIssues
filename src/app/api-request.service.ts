@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { CardInfo } from './cardInfo';
 import { PaginationElement } from './pagination-element';
-import { Subject } from 'rxjs';
-
+import { Subject, Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+import * as AppActions from './ngrx/app.actions';
+import { AppState } from './ngrx/app.reducer';
 @Injectable({
   providedIn: 'root'
 })
@@ -61,5 +63,13 @@ export class ApiRequestService {
     this.dataUpdated.next();
   }
   
-  constructor() { }
+
+  //Fetch API
+  fetchApiDataStore():void {
+    this.store.select(state=>state.url).subscribe((url)=>{
+      console.log(url);
+    })
+  }
+
+  constructor(private store: Store<AppState>) { }
 }

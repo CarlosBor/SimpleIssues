@@ -1,6 +1,5 @@
-<section>
-    <form [formGroup]="inputForm" (submit)="submitForm()">
-      <input id="url-input" type="text" placeholder="Input Github repo URL" formControlName="urlText">
-      <button type="submit" class="primary">Search</button>
-    </form>
-  </section>
+<form (ngSubmit)="onSubmit()">
+  <input type="text" [(ngModel)]="apiUrl" name="apiUrl" placeholder="Enter API URL" />
+  <button type="submit">Fetch Data</button>
+  <p>https://api.github.com/repos/microsoft/typescript/issues</p>
+</form>

@@ -1,8 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject} from '@angular/core';
+import { Store, select } from '@ngrx/store';
 import { CommonModule } from '@angular/common';
 import { FormsModule, FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ApiRequestService } from '../api-request.service';
-
+import { setUrl } from '../ngrx/app.actions';
+import { AppState } from '../ngrx/app.reducer';
+import * as AppActions from '../ngrx/app.actions';
 
 @Component({
   selector: 'app-repo-url-input-field',
@@ -17,18 +20,15 @@ import { ApiRequestService } from '../api-request.service';
 })
 
 export class RepoUrlInputFieldComponent {
+  apiUrl:string = "";
 
-  inputForm = new FormGroup({
-    urlText: new FormControl('')
-  });
 
-  apiRequestService = inject(ApiRequestService);
+  constructor(private store: Store<{app:AppState}>) {}
 
-  constructor() {}
-
-  submitForm() {
-    this.apiRequestService.submitInfo(
-      this.inputForm.value.urlText ?? ''
-    );
+  onSubmit() {
+    this.store.dispatch(AppActions.setUrl({ url: this.apiUrl }));
+    this.store.dispatch(AppActions.fetchApiData({ url: this.apiUrl }));
+    console.log("The action is submitted");
   }
+
 }
