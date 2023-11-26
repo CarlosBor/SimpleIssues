@@ -25,7 +25,6 @@ export class ApiRequestService {
 
   async getAllIssuesFromRepo(): Promise<Partial<CardInfo>[]> {
     const data = await fetch(this.url);
-    console.log("Issues from repo fires");
     let linkHeaders = data.headers.get('Link');
     if(linkHeaders){
       let linkHeadersContent = linkHeaders?.split(',');

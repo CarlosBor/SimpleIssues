@@ -5,18 +5,19 @@ import { PaginationElement } from '../pagination-element';
 
 export interface AppState {
   url: string;
-  cardInfoList : CardInfo[] | undefined | any;
+  cardInfoList: CardInfo[] | undefined;
   pagination : PaginationElement | undefined;
 }
 
 export const initialState: AppState = {
-  url: 'https://api.github.com/repositories/20929025/issues?page=50',
+  url: '',
   cardInfoList: undefined,
   pagination : undefined,
 };
 
 export const appReducer = createReducer(
   initialState,
-  on(AppActions.setUrl, (state, { url }) => ({...state, url })),
-  on(AppActions.setApiResponse, (state, { cardInfoList }) => ({ ...state, cardInfoList }))
+  on(AppActions.setUrl, (state, { url:string }) => ({...state, url:string })),
+  on(AppActions.setApiResponse, (state, { cardInfoList }) => ({ ...state, cardInfoList })),
+  on(AppActions.setLinkHeaders, (state, { pagination }) => ({ ...state, pagination })),
 );

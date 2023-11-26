@@ -24,7 +24,6 @@ export class ApiEffects {//Honest to God I don't understand how this call is mad
                 const responseData = response.body as CardInfo[];
                 if(linkHeader){
                     const parsedLinkHeaders:PaginationElement = parseLinkText(linkHeader);
-                    console.log(parsedLinkHeaders);
                     return[
                         ApiActions.setApiResponse({cardInfoList:responseData}),
                         ApiActions.setLinkHeaders({pagination:parsedLinkHeaders}),

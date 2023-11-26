@@ -1,16 +1,37 @@
-<app-issue-card
-    *ngFor="let issue of issuesList"
-    [issue]="issue">
-</app-issue-card>
-<div *ngIf="currentPagination && currentPagination.first">
-    <button (click)="processData(currentPagination.first)">First</button>
-</div>  
-<div *ngIf="currentPagination && currentPagination.prev">
-    <button (click)="processData(currentPagination.prev)">Prev</button>
+<p>This component exists</p>
+<p>https://api.github.com/repos/microsoft/typescript/issues</p>
+<div *ngIf="(cardInfoList$ | async) as cardInfoList">
+  <h2>Card Info List:</h2>
+  <ul>
+    <li *ngFor="let cardInfo of cardInfoList">
+      <!-- Display individual card info properties -->
+      <p>{{ cardInfo.id }}</p>
+      <p>{{ cardInfo.title }}</p>
+      <p>{{ cardInfo.url }}</p>
+      <p>{{ cardInfo.state }}</p>
+      <p>{{ cardInfo.created_at }}</p>
+      <p>{{ cardInfo.user.login }}</p>
+      <p>{{ cardInfo.body }}</p>
+      <!-- Add more properties as needed -->
+    </li>
+  </ul>
 </div>
-<div *ngIf="currentPagination && currentPagination.next">
-    <button (click)="processData(currentPagination.next)">Next</button>
-</div>
-<div *ngIf="currentPagination && currentPagination.last">
-    <button (click)="processData(currentPagination.last)">Last</button>
+<div *ngIf="(pagination$ | async) as pagination">
+  <ng-container *ngIf="pagination">
+    <ng-container *ngIf="pagination.first !== undefined">
+      <button (click)="goFirst()">&lt;&lt;</button>
+    </ng-container>
+    <ng-container *ngIf="pagination.prev !== undefined">
+      <button (click)="goPrev()">&lt;</button>
+    </ng-container>
+    <ng-container *ngIf="pagination.next !== undefined">
+      <button (click)="goNext()">&gt;</button>
+    </ng-container>
+    <ng-container *ngIf="pagination.last !== undefined">
+      <button (click)="goLast()">&gt;&gt;</button>
+    </ng-container>
+  </ng-container>
+  <ng-container *ngIf="!pagination">
+    <p>No pagination found</p>
+  </ng-container>
 </div>

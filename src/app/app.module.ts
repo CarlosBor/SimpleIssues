@@ -9,6 +9,7 @@ import { IssueSearcherComponent } from './issue-searcher/issue-searcher.componen
 import { EffectsModule } from '@ngrx/effects';
 import { ApiEffects } from './ngrx/app.effects';
 import { HttpClientModule } from '@angular/common/http';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     IssueSearcherComponent,
-    StoreModule.forRoot({ app: appReducer }),
-    EffectsModule.forRoot([ApiEffects]), // Include ApiEffects here
+    StoreModule.forRoot({appReducer}),
+    EffectsModule.forRoot([ApiEffects]),
     FormsModule,
     HttpClientModule,
+    StoreDevtoolsModule.instrument({ serialize: false }),
   ],
   providers: [],
   bootstrap: [AppComponent]
