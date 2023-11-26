@@ -30,5 +30,4 @@ export class RepoUrlInputFieldComponent {
     this.store.dispatch(AppActions.fetchApiData({ url: this.apiUrl }));
     console.log("The action is submitted");
   }
-
 }
