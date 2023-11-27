@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build",
+    "startTime": "2023-11-27T00:25:31.212Z",
+    "endTime": "2023-11-27T00:25:42.811Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "irontec-prueba-carlos:build:production",
+      "target": "build",
+      "projectName": "irontec-prueba-carlos",
+      "hash": "213414534589055735",
+      "startTime": "2023-11-27T00:25:31.225Z",
+      "endTime": "2023-11-27T00:25:42.810Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
