@@ -11137,6 +11137,26 @@
     "irontec-prueba-carlos": [
       {
         "source": "irontec-prueba-carlos",
+        "target": "npm:buffer",
+        "type": "static"
+      },
+      {
+        "source": "irontec-prueba-carlos",
+        "target": "npm:events",
+        "type": "static"
+      },
+      {
+        "source": "irontec-prueba-carlos",
+        "target": "npm:events",
+        "type": "dynamic"
+      },
+      {
+        "source": "irontec-prueba-carlos",
+        "target": "npm:string_decoder",
+        "type": "dynamic"
+      },
+      {
+        "source": "irontec-prueba-carlos",
         "target": "npm:@angular/animations",
         "type": "static"
       },

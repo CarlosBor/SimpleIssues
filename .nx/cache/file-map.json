@@ -52,16 +52,287 @@
           "hash": "13044518069027839699"
         },
         {
+          "file": ".nx/cache/213414534589055735/code",
+          "hash": "1838281907459330133"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/outputs/dist/irontec-prueba-carlos/3rdpartylicenses.txt",
+          "hash": "12942005650084851385"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/outputs/dist/irontec-prueba-carlos/browser/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/outputs/dist/irontec-prueba-carlos/browser/index.html",
+          "hash": "5741601921262365258"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/outputs/dist/irontec-prueba-carlos/browser/main-CFZDMVFS.js",
+          "hash": "13664159443360649258"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/outputs/dist/irontec-prueba-carlos/browser/polyfills-LZBJRJJE.js",
+          "hash": "5941810377592141465"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/outputs/dist/irontec-prueba-carlos/browser/styles-7QRCMLPH.css",
+          "hash": "9801611854346909324"
+        },
+        {
+          "file": ".nx/cache/213414534589055735/terminalOutput",
+          "hash": "3102523769337815413"
+        },
+        {
+          "file": ".nx/cache/213414534589055735.commit",
+          "hash": "4664556114322093609"
+        },
+        {
+          "file": ".nx/cache/213414534589055735.tar.gz",
+          "hash": "14397079901270139441"
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix6/index.js",
+          "hash": "15966481786630545044",
+          "deps": [
+            "npm:os",
+            "npm:assert",
+            "npm:buffer",
+            "npm:zlib",
+            "npm:events",
+            "npm:fs",
+            "npm:path",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ],
+            [
+              "npm:events",
+              "dynamic"
+            ],
+            [
+              "npm:string_decoder",
+              "dynamic"
+            ],
+            [
+              "npm:constants",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix6/lib/daemon/process-run-end.js",
+          "hash": "4387998712489105129",
+          "deps": [
+            "npm:path",
+            "npm:os",
+            "npm:assert",
+            "npm:buffer",
+            "npm:zlib",
+            "npm:events",
+            "npm:fs",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ],
+            [
+              "npm:events",
+              "dynamic"
+            ],
+            [
+              "npm:string_decoder",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix6/lib/heartbeat/heartbeat-process.js",
+          "hash": "5633484099946442012",
+          "deps": [
+            "npm:os",
+            "npm:fs",
+            "npm:path",
+            [
+              "npm:fs",
+              "dynamic"
+            ],
+            [
+              "npm:path",
+              "dynamic"
+            ],
+            [
+              "npm:os",
+              "dynamic"
+            ],
+            [
+              "npm:child_process",
+              "dynamic"
+            ],
+            [
+              "npm:crypto",
+              "dynamic"
+            ],
+            [
+              "npm:tty",
+              "dynamic"
+            ],
+            [
+              "npm:util",
+              "dynamic"
+            ],
+            [
+              "npm:url",
+              "dynamic"
+            ],
+            [
+              "npm:http",
+              "dynamic"
+            ],
+            [
+              "npm:https",
+              "dynamic"
+            ],
+            [
+              "npm:stream",
+              "dynamic"
+            ],
+            [
+              "npm:assert",
+              "dynamic"
+            ],
+            [
+              "npm:zlib",
+              "dynamic"
+            ],
+            [
+              "npm:perf_hooks",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": ".nx/cache/cloud/2311.09.8.hotfix6/package.json",
+          "hash": "11687418979936424737"
+        },
+        {
+          "file": ".nx/cache/cloud/verify.lock",
+          "hash": "6131867041006008281"
+        },
+        {
           "file": ".nx/cache/d/daemon.log",
-          "hash": "2595597098304255673"
+          "hash": "2600869382474865656"
         },
         {
           "file": ".nx/cache/d/server-process.json",
-          "hash": "17093781567785678383"
+          "hash": "3828399155140496260"
         },
         {
           "file": ".nx/cache/file-map.json",
-          "hash": "14660544097868668908"
+          "hash": "15217518199438146646"
         },
         {
           "file": ".nx/cache/lockfile.hash",
@@ -73,7 +344,39 @@
         },
         {
           "file": ".nx/cache/project-graph.json",
-          "hash": "3392261929104155463"
+          "hash": "3856981658651050263"
+        },
+        {
+          "file": ".nx/cache/run.json",
+          "hash": "2720667681900886278"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/10875949633976248447",
+          "hash": "8953259884165122031"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/17880554887087807153",
+          "hash": "13980296126112226500"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/213414534589055735",
+          "hash": "3102523769337815413"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/2975668407289351929",
+          "hash": "2544550569720843836"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/5078481276033524342",
+          "hash": "6968323527554053286"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/5708708795772361096",
+          "hash": "16116526421682664741"
+        },
+        {
+          "file": ".nx/cache/terminalOutputs/8457637153555683077",
+          "hash": "9560879868138738664"
         },
         {
           "file": ".vscode/extensions.json",
@@ -89,7 +392,7 @@
         },
         {
           "file": "README.md",
-          "hash": "10280590117153696013"
+          "hash": "739882640792232587"
         },
         {
           "file": "nx.json",
@@ -97,11 +400,11 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "7823689797510167150"
+          "hash": "17248565665591838495"
         },
         {
           "file": "package.json",
-          "hash": "9443107012392673674",
+          "hash": "16517262728187126793",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/common",
@@ -161,15 +464,16 @@
         },
         {
           "file": "src/app/app.component.spec.ts",
-          "hash": "6674282977027319673",
+          "hash": "13912866906216392603",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:@ngrx/store"
           ]
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "15522212853927382576",
+          "hash": "11849656908323733084",
           "deps": [
             "npm:@angular/core"
           ]
@@ -188,29 +492,6 @@
           ]
         },
         {
-          "file": "src/app/components/issue-card/issue-card.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/app/components/issue-card/issue-card.component.html",
-          "hash": "16634603486382556973"
-        },
-        {
-          "file": "src/app/components/issue-card/issue-card.component.spec.ts",
-          "hash": "3414196114044896595",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "src/app/components/issue-card/issue-card.component.ts",
-          "hash": "1752026653722571961",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
           "file": "src/app/components/issue-card-list/issue-card-list.component.css",
           "hash": "3244421341483603138"
         },
@@ -220,14 +501,15 @@
         },
         {
           "file": "src/app/components/issue-card-list/issue-card-list.component.spec.ts",
-          "hash": "13813097037792538637",
+          "hash": "3778027528805628981",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@ngrx/store"
           ]
         },
         {
           "file": "src/app/components/issue-card-list/issue-card-list.component.ts",
-          "hash": "11348280715451629916",
+          "hash": "8664981404071368496",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -245,9 +527,10 @@
         },
         {
           "file": "src/app/components/issue-searcher/issue-searcher.component.spec.ts",
-          "hash": "14354481810170704313",
+          "hash": "11065155632965509280",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@ngrx/store"
           ]
         },
         {
@@ -268,9 +551,10 @@
         },
         {
           "file": "src/app/components/repo-url-input-field/repo-url-input-field.component.spec.ts",
-          "hash": "7616975448961223192",
+          "hash": "11941144299801706079",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@ngrx/store"
           ]
         },
         {
@@ -327,8 +611,12 @@
           ]
         },
         {
+          "file": "src/app/util/parseLinkText.spec.ts",
+          "hash": "12184132308410804869"
+        },
+        {
           "file": "src/app/util/parseLinkText.ts",
-          "hash": "12296584322056316725"
+          "hash": "14077806683329701973"
         },
         {
           "file": "src/assets/.gitkeep",
