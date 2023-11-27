@@ -1,5 +1,6 @@
 # IrontecPrueba
 
+![App image](http://url/to/img.png)
 ## Development server
 
 Run `npx nx serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
