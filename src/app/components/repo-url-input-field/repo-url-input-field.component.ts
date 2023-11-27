@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppState } from '../ngrx/app.reducer';
-import * as AppActions from '../ngrx/app.actions';
+
+import { AppState } from '../../ngrx/app.reducer';
+import * as AppActions from '../../ngrx/app.actions';
 
 @Component({
   selector: 'app-repo-url-input-field',

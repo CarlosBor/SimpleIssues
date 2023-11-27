@@ -1,19 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardInfo } from '../../interface/cardInfo';
+import { IssueCardComponent } from '../issue-card/issue-card.component';
 import { PaginationElement } from '../../interface/pagination-element';
 import { Store } from '@ngrx/store';
-import { AppState } from '../ngrx/app.reducer';
+import { AppState } from '../../ngrx/app.reducer';
 import { Observable } from 'rxjs';
-import { selectCardInfoList, selectPagination, selectUrl } from '../ngrx/app.selectors';
-import * as AppActions from '../ngrx/app.actions';
+import { selectCardInfoList, selectPagination, selectUrl } from '../../ngrx/app.selectors';
+import * as AppActions from '../../ngrx/app.actions';
 import { first } from 'rxjs';
 
 @Component({
   selector: 'app-issue-card-list',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    IssueCardComponent
   ],
   templateUrl: './issue-card-list.component.html',
   styleUrl: './issue-card-list.component.css'
@@ -31,8 +33,9 @@ export class IssueCardListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.cardInfoList$.subscribe();
-    this.pagination$.subscribe();
+    // Subscribe to the observables to get updates
+    this.cardInfoList$.subscribe(cardInfoList => console.log('Received cardInfoList from store:', cardInfoList));
+    this.pagination$.subscribe(pagination => console.log('Received pagination from store:', pagination));
   }
 
   goFirst() {

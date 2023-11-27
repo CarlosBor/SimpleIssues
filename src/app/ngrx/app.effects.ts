@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { mergeMap } from 'rxjs/operators';
 import { HttpClient, HttpResponse } from '@angular/common/http';
-import { CardInfo } from '../../interface/cardInfo';
-import parseLinkText from '../../util/parseLinkText';
-import { PaginationElement } from '../../interface/pagination-element';
+import { CardInfo } from '../interface/cardInfo';
+import parseLinkText from '../util/parseLinkText';
+import { PaginationElement } from '../interface/pagination-element';
 
 // Import necessary services for HTTP requests
 
@@ -31,6 +31,7 @@ export class ApiEffects {//Honest to God I don't understand how this call is mad
                 }
                 return[ApiActions.setApiResponse({cardInfoList:responseData})];
             })
+            // catchError(() => of(/* action for error */))
           );
         })
       )
@@ -38,6 +39,6 @@ export class ApiEffects {//Honest to God I don't understand how this call is mad
 
   constructor(
     private actions$: Actions,
-    private http: HttpClient
+    private http: HttpClient // Import HttpClient for making HTTP requests
   ) {}
 }

@@ -1,0 +1,9 @@
+<section class="issueCard">
+  <h2 class="issue-title">{{issue.title}}</h2>
+  <p class="issue-id">{{issue.id}}</p>
+  <p>{{issue.url}}</p>
+  <p>{{issue.state}}</p>
+  <p>{{issue.created_at}}</p>
+  <p>{{issue.user?.login ?? 'undefined login name'}}</p>
+  <p>{{issue.body}}</p>
+</section>

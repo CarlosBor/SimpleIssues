@@ -1,7 +1,7 @@
 import { createReducer, on } from '@ngrx/store';
 import * as AppActions from './app.actions';
-import { CardInfo } from '../../interface/cardInfo';
-import { PaginationElement } from '../../interface/pagination-element';
+import { CardInfo } from '../interface/cardInfo';
+import { PaginationElement } from '../interface/pagination-element';
 
 export interface AppState {
   url: string;
