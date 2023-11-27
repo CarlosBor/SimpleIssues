@@ -1,6 +1,6 @@
 # IrontecPrueba
 
-![App image](https://raw.githubusercontent.com/CarlosBor/SimpleIssues/main/src/assets/image.png?token=GHSAT0AAAAAACHCNECQSUJJWBIVXMTEH2ZWZLD554A)
+![App image](http://raw.githubusercontent.com/CarlosBor/SimpleIssues/main/src/assets/image.png?token=GHSAT0AAAAAACHCNECQSUJJWBIVXMTEH2ZWZLD554A)
 ## Development server
 
 Run `npx nx serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
