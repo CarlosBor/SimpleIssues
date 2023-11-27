@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { RepoUrlInputFieldComponent } from '../repo-url-input-field/repo-url-input-field.component';
 import { IssueCardListComponent } from '../issue-card-list/issue-card-list.component';
 
@@ -18,8 +17,5 @@ import { IssueCardListComponent } from '../issue-card-list/issue-card-list.compo
 })
 
 export class IssueSearcherComponent {
-
   constructor() {}
-
-  private async updateIssuesList() {}
 }
